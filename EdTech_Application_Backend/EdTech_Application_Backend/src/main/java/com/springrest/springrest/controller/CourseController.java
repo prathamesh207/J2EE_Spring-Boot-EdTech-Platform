@@ -104,7 +104,7 @@ public class CourseController {
 				course.setCourseimg(generatedFileName);
 				
 				InputStream is = coursedetails.getCourseimg().getInputStream();
-				FileOutputStream os = new FileOutputStream("C:\\Users\\prati\\OneDrive\\Desktop\\C-DAC\\Advance Java\\Projects\\EdTechApplicationFrontend\\Frontend\\Edtech_Forntend\\public\\img\\" + generatedFileName);
+				FileOutputStream os = new FileOutputStream("C:\\Users\\prath\\OneDrive\\Desktop\\Je22\\J2EE-Spring-Boot-EdTech-Platfrom\\EdTechApplicationFrontend\\Frontend\\Edtech_Forntend\\public\\img\\" + generatedFileName);
 				FileCopyUtils.copy(is, os);
 				
 				fileName = coursedetails.getCoursevideo().getOriginalFilename();
@@ -114,7 +114,7 @@ public class CourseController {
 				course.setCoursevideo(generatedFileName1);
 				
 				is = coursedetails.getCoursevideo().getInputStream();
-				os = new FileOutputStream("C:\\Users\\prati\\OneDrive\\Desktop\\C-DAC\\Advance Java\\Projects\\EdTechApplicationFrontend\\Frontend\\Edtech_Forntend\\public\\video\\" + generatedFileName1);
+				os = new FileOutputStream("C:\\Users\\prath\\OneDrive\\Desktop\\Je22\\J2EE-Spring-Boot-EdTech-Platfrom\\EdTechApplicationFrontend\\Frontend\\Edtech_Forntend\\public\\video\\" + generatedFileName1);
 				FileCopyUtils.copy(is, os);
 			}
 			catch (IOException e) {

@@ -12,7 +12,7 @@ const Register = () => {
         email: "",
         password: "",
         confirmpassword: "",
-        role: "s"
+        role: "a"
     });
     const navigate = useNavigate();
     const [isSubmitted, setisSubmitted] = useState(false);
